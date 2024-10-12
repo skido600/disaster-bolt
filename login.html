@@ -31,7 +31,7 @@
             >
             <input
               type="text"
-              id="username"
+              id="username_two"
               class="w-full outline-none border-b-2 px-8 border-gray-300 focus:border-blue-500 placeholder:text-[12px] mt-2"
               placeholder="Type your username"
             />
@@ -40,6 +40,10 @@
               src="./img/group_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
               alt=""
             />
+            <p
+              id="error_username"
+              class="text-red-600 top-[-1rem] text-[10px] relative"
+            ></p>
           </div>
           <!-- Create password -->
           <div class="relative mb-6">
@@ -47,7 +51,7 @@
             <div class="flex flex-col">
               <input
                 type="password"
-                id="password"
+                id="password_two"
                 class="w-full outline-none border-b-2 px-8 border-gray-300 focus:border-blue-500 placeholder:text-[12px] mt-2"
                 placeholder="Type your password"
                 autocomplete="new-password"
@@ -58,7 +62,7 @@
                 src="../img/visibility_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
                 alt="Toggle password visibility"
                 class="absolute top-[30px] right-2 w-6 h-6 cursor-pointer"
-                id="eye"
+                id="eye_two"
               />
               <img
                 class="relative top-[-25px] left-1 w-6 h-6"
@@ -78,6 +82,7 @@
           <div class="mt-8">
             <!-- login button -->
             <button
+              id="Login_submit"
               type="submit"
               class="w-full font-bold text-white bg-gradient-blue p-2 rounded-full"
             >
@@ -86,7 +91,7 @@
           </div>
           <!-- route -->
           <p class="text-center">
-            <a href="./login/Signin.html" class="text-[15px] text-blue-600"
+            <a href="./login/Signin.html" class="text-[12px] text-blue-600"
               >or sign up</a
             >
           </p>

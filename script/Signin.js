@@ -7,7 +7,7 @@ export default function Signin() {
   const username = document.getElementById("username");
   const email = document.getElementById("email");
   const password = document.getElementById("password");
-  const eyemain = document.getElementById("eye");
+  const eyemain = document.getElementById("eye_main"); // Ensure this matches your HTML
   const signInBtn = document.getElementById("submit");
 
   // Error display elements
@@ -15,6 +15,7 @@ export default function Signin() {
   const emailError = document.getElementById("email_error");
   const passwordError = document.getElementById("error_password");
 
+  // Event listeners
   eyemain.addEventListener("click", togglePasswordVisibility);
   signInBtn.addEventListener("click", function (e) {
     e.preventDefault();
@@ -25,13 +26,15 @@ export default function Signin() {
 
   // Password toggle function
   function togglePasswordVisibility() {
-    const type =
-      password.getAttribute("type") === "password" ? "text" : "password";
-    password.setAttribute("type", type); // Set the new type
-
-    // Change the eye icon based on the password visibility
-    eyemain.src = type === "text" ? eyeOn : eyeOff;
+    if (password.type === "password") {
+      password.type = "text";
+      eyemain.src = eyeOn;
+    } else {
+      password.type = "password";
+      eyemain.src = eyeOff;
+    }
   }
+
   // Validate username function
   function validateUsername() {
     const value = username.value.trim();
