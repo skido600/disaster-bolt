@@ -7,3 +7,19 @@ body {
 
   font-style: normal;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  margin-top: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e3a8a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e3a8a;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}

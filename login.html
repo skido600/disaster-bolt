@@ -18,85 +18,91 @@
   </head>
   <body>
     <!-- login start -->
-    <main class="bg-blue-900 h-screen flex items-center justify-center">
-      <article
-        class="bg-white w-[90vw] sm:w-[400px] p-6 rounded-[7px] shadow-lg"
-      >
-        <h1 class="text-center font-bold text-2xl mb-4">Login</h1>
-        <form action="#" class="">
-          <!-- for username -->
-          <div class="relative">
-            <label for="username" class="font-semibold"
-              >Username or Email</label
-            >
-            <input
-              type="text"
-              id="username_two"
-              class="w-full outline-none border-b-2 px-8 border-gray-300 focus:border-blue-500 placeholder:text-[12px] mt-2"
-              placeholder="Type your username"
-            />
-            <img
-              class="relative top-[-25px] left-[2px]"
-              src="./img/group_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
-            <p
-              id="error_username"
-              class="text-red-600 top-[-1rem] text-[10px] relative"
-            ></p>
-          </div>
-          <!-- Create password -->
-          <div class="relative mb-6">
-            <label for="password" class="font-semibold">Create password</label>
-            <div class="flex flex-col">
+    <main
+      class="bg-blue-900 fixed top-0 bottom-0 right-0 left-0 flex items-center justify-center"
+    >
+      <section class="overflow-y-auto h-[95vh] sm:overflow-hidden sm:h-auto">
+        <article
+          class="bg-white w-[90vw] sm:w-[400px] p-6 rounded-[7px] shadow-lg"
+        >
+          <h1 class="text-center font-bold text-2xl mb-4">Login</h1>
+          <form action="#" class="">
+            <!-- for username -->
+            <div class="relative">
+              <label for="username" class="font-semibold"
+                >Username or Email</label
+              >
               <input
-                type="password"
-                id="password_two"
+                type="text"
+                id="username_two"
                 class="w-full outline-none border-b-2 px-8 border-gray-300 focus:border-blue-500 placeholder:text-[12px] mt-2"
-                placeholder="Type your password"
-                autocomplete="new-password"
-                aria-label="Password"
-                required
+                placeholder="Type your username"
               />
               <img
-                src="../img/visibility_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="Toggle password visibility"
-                class="absolute top-[30px] right-2 w-6 h-6 cursor-pointer"
-                id="eye_two"
-              />
-              <img
-                class="relative top-[-25px] left-1 w-6 h-6"
-                src="../img/vpn_key_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="Password icon"
+                class="relative top-[-25px] left-[2px]"
+                src="./img/group_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
               />
               <p
-                id="error_password"
+                id="error_username"
                 class="text-red-600 top-[-1rem] text-[10px] relative"
               ></p>
             </div>
-          </div>
-          <!-- forget password -->
-          <p class="text-right mt-[-18px] font-[400] text-[15px]">
-            forget password
-          </p>
-          <div class="mt-8">
-            <!-- login button -->
-            <button
-              id="Login_submit"
-              type="submit"
-              class="w-full font-bold text-white bg-gradient-blue p-2 rounded-full"
-            >
-              Login
-            </button>
-          </div>
-          <!-- route -->
-          <p class="text-center">
-            <a href="./login/Signin.html" class="text-[12px] text-blue-600"
-              >or sign up</a
-            >
-          </p>
-        </form>
-      </article>
+            <!-- Create password -->
+            <div class="relative mb-6">
+              <label for="password" class="font-semibold"
+                >Create password</label
+              >
+              <div class="flex flex-col">
+                <input
+                  type="password"
+                  id="password_two"
+                  class="w-full outline-none border-b-2 px-8 border-gray-300 focus:border-blue-500 placeholder:text-[12px] mt-2"
+                  placeholder="Type your password"
+                  autocomplete="new-password"
+                  aria-label="Password"
+                  required
+                />
+                <img
+                  src="../img/visibility_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="Toggle password visibility"
+                  class="absolute top-[30px] right-2 w-6 h-6 cursor-pointer"
+                  id="eye_two"
+                />
+                <img
+                  class="relative top-[-25px] left-1 w-6 h-6"
+                  src="../img/vpn_key_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="Password icon"
+                />
+                <p
+                  id="error_password"
+                  class="text-red-600 top-[-1rem] text-[10px] relative"
+                ></p>
+              </div>
+            </div>
+            <!-- forget password -->
+            <p class="text-right mt-[-18px] font-[400] text-[15px]">
+              forget password
+            </p>
+            <div class="mt-8">
+              <!-- login button -->
+              <button
+                id="Login_submit"
+                type="submit"
+                class="w-full font-bold text-white bg-gradient-blue p-2 rounded-full"
+              >
+                Login
+              </button>
+            </div>
+            <!-- route -->
+            <p class="text-center">
+              <a href="./login/Signin.html" class="text-[12px] text-blue-600"
+                >or sign up</a
+              >
+            </p>
+          </form>
+        </article>
+      </section>
     </main>
     <script src="./script/Login.js"></script>
   </body>
