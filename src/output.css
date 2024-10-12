@@ -638,28 +638,16 @@ video {
   height: 1.5rem;
 }
 
-.h-\[90vh\] {
-  height: 90vh;
+.h-\[95vh\] {
+  height: 95vh;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .h-\[80vh\] {
   height: 80vh;
-}
-
-.h-\[95vh\] {
-  height: 95vh;
-}
-
-.h-\[98vh\] {
-  height: 98vh;
 }
 
 .w-6 {
@@ -854,31 +842,5 @@ body {
 
   .sm\:overflow-hidden {
     overflow: hidden;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:h-screen {
-    height: 100vh;
-  }
-
-  .md\:h-0 {
-    height: 0px;
-  }
-
-  .md\:h-full {
-    height: 100%;
-  }
-
-  .md\:h-auto {
-    height: auto;
-  }
-
-  .md\:overflow-hidden {
-    overflow: hidden;
-  }
-
-  .md\:overflow-y-hidden {
-    overflow-y: hidden;
   }
 }
