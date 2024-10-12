@@ -590,10 +590,6 @@ video {
   top: 30px;
 }
 
-.m-4 {
-  margin: 1rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -662,10 +658,6 @@ video {
   gap: 0.5rem;
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 .rounded-\[7px\] {
   border-radius: 7px;
 }
@@ -717,11 +709,6 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .py-5 {

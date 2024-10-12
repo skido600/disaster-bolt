@@ -7,7 +7,7 @@ function Login() {
   const username_login = document.getElementById("username_two");
   const password_login = document.getElementById("password_two");
   const eye_main = document.getElementById("eye_two");
-  const signInBtn = document.getElementById("Login_submit"); // Adjust the ID to match your HTML
+  const signInBtn = document.getElementById("Login_submit");
 
   // Error display elements
   let error_username = document.getElementById("error_username");
@@ -59,4 +59,4 @@ function Login() {
   }
 }
 
-export default Login;
+Login();
