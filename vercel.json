@@ -5,8 +5,8 @@
       "dest": "/login.html"
     },
     {
-      "src": "/login/sigin",
-      "dest": "/login/sigin.html"
+      "src": "/login/(.*)",
+      "dest": "/login/$1"
     }
   ]
 }
