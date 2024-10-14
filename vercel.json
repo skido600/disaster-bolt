@@ -6,7 +6,7 @@
     },
     {
       "src": "/signin",
-      "dest": "../login/signin.html"
+      "dest": "/login/signin.html"
     }
   ]
 }
