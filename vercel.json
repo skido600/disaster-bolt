@@ -3,6 +3,10 @@
     {
       "src": "/",
       "dest": "/login.html"
+    },
+    {
+      "src": "/login/sigin",
+      "dest": "/login/sigin.html"
     }
   ]
 }
