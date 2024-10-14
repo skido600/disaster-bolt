@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./src/CustomAlert.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
       rel="stylesheet"
@@ -22,13 +23,19 @@
       <article
         class="bg-white w-[90vw] sm:w-[400px] p-6 rounded-[7px] shadow-lg"
       >
-        <h1 class="text-center font-bold text-2xl mb-4">Login</h1>
+        <div class="flex">
+          <h1 class="text-center font-bold text-2xl mb-4">Login</h1>
+          <!-- <img
+            src="./img/logo.jpg"
+            alt="logo"
+            class="w-[17rem] h-[5rem] rounded-full border-2 border-blue-500 object-contain"
+          /> -->
+        </div>
+
         <form action="#" class="">
           <!-- for username -->
           <div class="relative">
-            <label for="username" class="font-semibold"
-              >Username or Email</label
-            >
+            <label for="username" class="font-semibold"> Email</label>
             <input
               type="text"
               id="username_two"
@@ -41,13 +48,13 @@
               alt=""
             />
             <p
-              id="error_username"
+              id="error_email"
               class="text-red-600 top-[-1rem] text-[10px] relative"
             ></p>
           </div>
           <!-- Create password -->
           <div class="relative mb-6">
-            <label for="password" class="font-semibold">Create password</label>
+            <label for="password" class="font-semibold"> password</label>
             <div class="flex flex-col">
               <input
                 type="password"
@@ -91,13 +98,13 @@
           </div>
           <!-- route -->
           <p class="text-center">
-            <a href="./login/Signin.html" class="text-[12px] text-blue-600"
+            <a href="./login/signin.html" class="text-[12px] text-blue-600"
               >or sign up</a
             >
           </p>
         </form>
       </article>
     </main>
-    <script src="./script/Login.js"></script>
+    <script src="./script/Login.js" type="module"></script>
   </body>
 </html>
