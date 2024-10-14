@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./login/Signin.html", // This includes the signin.html file inside the login folder
-    "./login.html", // This includes the login.html file outside the folder
-    "./src/**/*.{html,js}", // This includes other HTML and JS files in the src directory
+    "./login/Signin.html",
+    "./login/login.html",
+    "./welcome-page.html",
+    "./src/**/*.{html,js}",
   ],
   theme: {
     extend: {
