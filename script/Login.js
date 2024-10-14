@@ -76,8 +76,7 @@ function Login() {
     "auth/network-request-failed":
       "Oops! Check your internet connection and try again.",
     "auth/wrong-password": "Incorrect password.",
-    "auth/email-already-in-use":
-      "The email address is already in use by another account.",
+    "auth/email-already-in-use": "The email address is already in use",
     "auth/weak-password": "The password is too weak.",
     "auth/user-disabled": "Your account has been disabled.",
     "auth/operation-not-allowed": "Operation not allowed.",
@@ -92,7 +91,7 @@ function Login() {
     "auth/popup-blocked": "The popup was blocked by the browser.",
     "auth/too-many-requests":
       "Too many login attempts. Please try again later.",
-    "auth/invalid-credential": "Account didn't exist, create one.",
+    "auth/invalid-credential": "invalid email or password",
     "auth/invalid-verification-code": "The verification code is invalid.",
     "auth/invalid-verification-id": "The verification ID is invalid.",
     "auth/operation-not-allowed": "Operation not allowed.",
@@ -114,14 +113,17 @@ function Login() {
         password
       );
       const user = userCredential.user;
-      if (user.emailVerified) {
-        localStorage.setItem("account_active", "true");
-        showCustomAlert("Success", "User signed in successfully.");
-        location.href = "../login/main.html";
-        console.log("User signed in:", user);
-      } else {
+
+      //  email is verified
+      if (!user.emailVerified) {
         showCustomAlert("Error", "Please verify your email before logging in.");
+        return;
       }
+
+      localStorage.setItem("account_active", "true");
+      showCustomAlert("Success", "User signed in successfully.");
+      location.href = "../login/main.html";
+      console.log("User signed in:", user);
     } catch (error) {
       const errorMessage =
         errorMap[error.code] || "An unexpected error occurred.";
