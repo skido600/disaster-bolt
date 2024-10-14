@@ -642,29 +642,13 @@ video {
   top: 30px;
 }
 
-.top-\[1rem\]{
-  top: 1rem;
+.m-4{
+  margin: 1rem;
 }
 
-.top-\[0\.6rem\]{
-  top: 0.6rem;
-}
-
-.top-\[0\.7rem\]{
-  top: 0.7rem;
-}
-
-.top-\[0\.5rem\]{
-  top: 0.5rem;
-}
-
-.m-2{
-  margin: 0.5rem;
-}
-
-.my-2{
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-4{
@@ -699,10 +683,6 @@ video {
   height: 1.5rem;
 }
 
-.h-\[5rem\]{
-  height: 5rem;
-}
-
 .h-\[80vh\]{
   height: 80vh;
 }
@@ -713,10 +693,6 @@ video {
 
 .w-6{
   width: 1.5rem;
-}
-
-.w-\[17rem\]{
-  width: 17rem;
 }
 
 .w-\[90vw\]{
@@ -747,6 +723,18 @@ video {
   gap: 0.5rem;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-12{
+  gap: 3rem;
+}
+
+.gap-\[5rem\]{
+  gap: 5rem;
+}
+
 .overflow-y-auto{
   overflow-y: auto;
 }
@@ -763,17 +751,8 @@ video {
   border-radius: 0.5rem;
 }
 
-.border-2{
-  border-width: 2px;
-}
-
 .border-b-2{
   border-bottom-width: 2px;
-}
-
-.border-blue-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 
 .border-gray-300{
@@ -795,11 +774,6 @@ video {
   background-image: linear-gradient(to right, #0000FF, #ADD8E6);
 }
 
-.object-contain{
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .p-2{
   padding: 0.5rem;
 }
@@ -815,6 +789,11 @@ video {
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .text-center{
@@ -838,12 +817,16 @@ video {
   font-size: 12px;
 }
 
+.text-\[13px\]{
+  font-size: 13px;
+}
+
 .text-\[15px\]{
   font-size: 15px;
 }
 
-.text-\[13px\]{
-  font-size: 13px;
+.text-\[16px\]{
+  font-size: 16px;
 }
 
 .font-\[400\]{
@@ -863,6 +846,11 @@ video {
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
+.text-purple-500{
+  --tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity));
+}
+
 .text-red-600{
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -875,10 +863,6 @@ video {
 
 .no-underline{
   text-decoration-line: none;
-}
-
-.decoration-neutral-600{
-  text-decoration-color: #525252;
 }
 
 .shadow-lg{
