@@ -36,14 +36,15 @@
   margin: 0;
 }
 .custom-alert p {
-  font-size: 16px;
+  font-size: 10px;
 }
 .custom-alert-button {
-  padding: 10px 20px;
-  width: 90%;
+  padding: 8px 8px;
+  width: 80%;
   background: black;
   color: #fff;
   border: none;
+  font-size: 10px;
   border-radius: 9999px;
   cursor: pointer;
   font-weight: bold;
