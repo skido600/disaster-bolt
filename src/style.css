@@ -1,35 +1,28 @@
 /* General styling */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   font-family: "Poppins", sans-serif;
-}
-* {
-  text-decoration: none;
-  outline: none;
-}
-/* .div-body { */
-/* background: rgba(10, 15, 30, 0.9);
-  color: white;
-  padding: 30px;
-  max-width: 400px;
-  margin: auto;
-  border-radius: 15px; */
-/* } */
+  background-color: rgba(30 58 138);
 
-/* i imported tailwinds */
-/* .card-body h1 {
-  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.div-body {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-body h1 {
   font-weight: 700;
   margin-bottom: 10px;
-} */
+}
 
-/* i imported tailwinds */
-/* .card-body p {
-  font-size: 0.9rem;
+.card-body p {
   font-weight: 400;
   margin-bottom: 30px;
-} */
+}
 
-/* important */
 /* Borders for the circular map */
 .borders {
   border-radius: 50%;
@@ -37,6 +30,7 @@ body {
   width: 300px;
   position: relative;
   margin: auto;
+  border: 1px solid wheat;
 }
 
 .image-container img {
@@ -110,7 +104,7 @@ i {
 }
 
 /* Button styling */
-/* .button-circle {
+.button-circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,9 +112,9 @@ i {
   width: 100%;
   padding: 10px;
   font-weight: bold;
-} */
+}
 
-/* .btn-get-started {
+.btn-get-started {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,15 +128,15 @@ i {
   position: relative;
   width: 250px;
   height: 50px;
-} */
+}
 
-/* .btn-get-started:hover {
+.btn-get-started:hover {
   background-color: #57db9f;
   color: white;
-} */
+}
 
 /* Blue Circle Inside Button */
-/* .blue-circle {
+.blue-circle {
   background-color: #4f3cc9;
   border-radius: 50%;
   width: 30px;
@@ -151,24 +145,25 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
 
 /* Search Icon Inside Blue Circle */
-/* .blue-circle::before {
-  content: "\1F50D";
-
+.blue-circle::before {
+  content: "\1F4CD";
+  /* Unicode for magnifying glass icon */
   color: white;
   font-size: 16px;
-} */
+}
 
-/* .link:hover {
+.link:hover {
   background-color: #57db9f;
   color: white;
-} */
+}
 
-/* .link {
-
-} */
+.link {
+  text-decoration: none;
+  outline: none;
+}
 
 svg {
   border: 1px solid white;
@@ -199,22 +194,7 @@ svg {
     transform: translate(-50%, -50%) translateX(0) translateY(0);
   }
 }
-.btn {
-  background-color: #6ef7be;
-  font-size: 12px;
-  margin: auto;
-  color: white;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  border-radius: 9999px;
-  padding: 10px 12px;
-}
-.main_btn {
-  display: flex;
-}
+
 .center-icon {
   position: absolute;
   top: 50%;
@@ -223,4 +203,57 @@ svg {
   color: #6ef7be;
   font-size: 3rem;
   animation: moveAround 5s infinite ease-in-out;
+}
+
+/* Responsive styling*/
+@media only screen and (max-width: 768px) {
+  .div-body {
+    /* max-width: 100%; */
+    /* padding: 20px; */
+  }
+
+  .borders {
+    height: 250px;
+    width: 250px;
+  }
+
+  .center-icon {
+    font-size: 2.5rem;
+  }
+
+  .btn-get-started {
+    width: 200px;
+    height: 45px;
+  }
+
+  .blue-circle {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .div-body {
+    /* max-width: 100%; */
+    padding: 20px;
+  }
+
+  .borders {
+    height: 200px;
+    width: 200px;
+  }
+
+  .center-icon {
+    font-size: 2rem;
+  }
+
+  .btn-get-started {
+    width: 180px;
+    height: 40px;
+  }
+
+  .blue-circle {
+    width: 20px;
+    height: 20px;
+  }
 }
