@@ -642,13 +642,13 @@ video {
   top: 30px;
 }
 
-.m-4{
-  margin: 1rem;
+.m-auto{
+  margin: auto;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-4{
@@ -675,16 +675,20 @@ video {
   margin-top: -18px;
 }
 
-.mt-12{
-  margin-top: 3rem;
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .mt-16{
   margin-top: 4rem;
 }
 
-.mt-\[10rem\]{
-  margin-top: 10rem;
+.mt-\[7rem\]{
+  margin-top: 7rem;
+}
+
+.mt-\[9rem\]{
+  margin-top: 9rem;
 }
 
 .flex{
@@ -713,10 +717,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[30\%\]{
-  width: 30%;
 }
 
 .w-\[60\%\]{
@@ -786,10 +786,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-4{
-  padding: 1rem;
-}
-
 .p-6{
   padding: 1.5rem;
 }
@@ -828,16 +824,8 @@ video {
   font-size: 15px;
 }
 
-.text-\[40px\]{
-  font-size: 40px;
-}
-
 .text-\[20px\]{
   font-size: 20px;
-}
-
-.text-\[25px\]{
-  font-size: 25px;
 }
 
 .font-\[400\]{
@@ -857,11 +845,6 @@ video {
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
-.text-purple-500{
-  --tw-text-opacity: 1;
-  color: rgb(168 85 247 / var(--tw-text-opacity));
-}
-
 .text-red-600{
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -870,10 +853,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.no-underline{
-  text-decoration-line: none;
 }
 
 .shadow-lg{
@@ -936,51 +915,19 @@ body {
 }
 
 @media (min-width: 768px){
-  .md\:w-\[30\%\]{
-    width: 30%;
+  .md\:mt-\[8rem\]{
+    margin-top: 8rem;
   }
 
-  .md\:w-\[25\%\]{
-    width: 25%;
+  .md\:mt-\[6rem\]{
+    margin-top: 6rem;
   }
 
-  .md\:w-\[20\%\]{
-    width: 20%;
+  .md\:w-\[60\%\]{
+    width: 60%;
   }
 
-  .md\:w-\[\%\]{
-    width: %;
-  }
-
-  .md\:text-center{
-    text-align: center;
-  }
-
-  .md\:text-\[9\.5rem\]{
-    font-size: 9.5rem;
-  }
-
-  .md\:text-\[2\.5rem\]{
-    font-size: 2.5rem;
-  }
-
-  .md\:text-\[360px\]{
-    font-size: 360px;
-  }
-
-  .md\:text-\[30px\]{
-    font-size: 30px;
-  }
-
-  .md\:text-\[20px\]{
-    font-size: 20px;
-  }
-
-  .md\:text-\[40px\]{
-    font-size: 40px;
-  }
-
-  .md\:font-black{
-    font-weight: 900;
+  .md\:text-\[25px\]{
+    font-size: 25px;
   }
 }

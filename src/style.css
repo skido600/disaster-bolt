@@ -130,11 +130,6 @@ i {
   height: 50px;
 }
 
-.btn-get-started:hover {
-  background-color: #57db9f;
-  color: white;
-}
-
 /* Blue Circle Inside Button */
 .blue-circle {
   background-color: #4f3cc9;
