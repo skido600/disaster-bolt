@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./login/Signin.html",
+    "./login/emergency.html",
     "./login/login.html",
     "./welcome-page.html",
     "./src/**/*.{html,js}",
