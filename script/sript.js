@@ -67,5 +67,5 @@ const fetchEmergencyLine = (name) => {
 };
 
 getUserLocation();
-fetchEmergencyLine("ae");
+fetchEmergencyLine("ng");
 // console.log(emergencyLine);
